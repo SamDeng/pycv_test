@@ -8,7 +8,6 @@ pr = cv2.pyrDown(image, None)
 while 1:
     cv2.imshow("prydown", pr)
     cv2.imshow("origin", image)
-    cv2.waitKey(20)
-
+    
 
 print "hi"

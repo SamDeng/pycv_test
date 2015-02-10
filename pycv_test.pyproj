@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{07daa7e0-8937-49b4-8159-0a41ed9b55e9}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pycv_test.py</StartupFile>
+    <StartupFile>dft_test\dft_test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,10 +25,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="blob_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dft_test\dft_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dft_test\numpy_fft_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="matchtemplate_test.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multiobject_test.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pycv_test.py" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dft_test\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
